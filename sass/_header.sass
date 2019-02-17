@@ -1,0 +1,52 @@
+.no_top
+	margin-top: 0 !important
+.header
+	margin-top: 40px
+	padding: 15px 0
+	&-logo
+		background: url(../img/logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&-numbers
+			display: flex
+			justify-content: flex-end
+			align-items: center
+		&__btn
+			margin-left: 13px
+			img
+				margin-right: 7px 	
+				vertical-align: middle
+			span
+				color: $text-color-light
+				font-family: 'Roboto'
+				line-height: 22px
+				font-weight: 500
+				font-size: 15px
+		&__num
+			font-size: 22px
+			font-weight: 500
+			color: $text-color-dark
+			margin-right: 13px
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+
+@keyframes move
+	from
+		opacity: 0
+		margin-bottom: -400px
+		transform: rotate(90deg)		
+	to
+		opacity: 1
+		margin-bottom: 0
+		transform: rotate(0)
+
+.animate
+	animation-name: move
+	animation-duration: 1s
+	animation-delay: 0.4s

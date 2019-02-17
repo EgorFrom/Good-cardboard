@@ -1,0 +1,92 @@
+.item-menu
+	cursor: pointer
+.unmobile-hidden
+	display: none
+*
+	outline: none
+.section
+	&-title
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 39px
+		&::after
+			margin-top: 12px
+			margin-top: 
+			content: ''
+			display: block
+			height: 6px
+			background: url(../img/title-underline.png) center no-repeat
+.btn
+	background-color: $active-color
+	border: 1px solid transparent
+	font-size: 14px
+	color: $text-color-light
+	padding: 13px 22px
+	border-radius: 5px
+	&:hover
+		background-color: lighten($active-color, 5)
+		cursor: pointer
+	img
+		vertical-align: middle
+	&-big
+		padding-top: 20px
+		padding-bottom: 20px
+		vertical-align: middle
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba($text-color-dark, 0.5)
+		margin-right: 12px
+		&:hover
+			background-color: lighten($active-color, 5)
+			cursor: pointer	
+			color: $text-color-light
+			border: 1px solid transparent
+.slider-arrow
+	z-index: 5
+	position: absolute
+	top: 0
+	height: 100%
+	width: 22px
+	&_prod
+		border: 1px solid $active-color
+		&:hover
+			cursor: pointer
+		&_right
+			background: #fff url(../img/arrow-right.png) center no-repeat 
+			right: 0
+			&:hover
+				background: #ff9d00 url(../img/arrow-right-active.png) center no-repeat
+		&_left
+			left: 0
+			background: #fff url(../img/arrow-left.png) center no-repeat 
+			&:hover
+				background: #ff9d00 url(../img/arrrow-left-active.png) center no-repeat
+	&_feedback
+		&:hover
+			cursor: pointer
+		&_right
+			background: $bg-color-light url(../img/arrow-right.png) center no-repeat 
+			right: 0
+			&:hover
+				background: darken($bg-color-light, 50%) url(../img/arrow-right-active.png) center no-repeat
+		&_left
+			left: 0
+			background: $bg-color-light url(../img/arrow-left.png) center no-repeat 
+			&:hover
+				background: darken($bg-color-light, 50%) url(../img/arrrow-left-active.png) center no-repeat
+.dark-bg
+	position: relative
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0, 0.6)
+		z-index: -1
